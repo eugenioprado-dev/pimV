@@ -271,6 +271,9 @@ footer{                                 /*a parte do rodapé*/
     background-color: #101828;
     color: white;
     padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%; 
 }
 
 .footer{

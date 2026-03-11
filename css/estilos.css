@@ -1,10 +1,19 @@
 @charset 'UTF-8';
 
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --blue-primary: #2563eb;
+    --gray-bg: #f8fafc;
+    --gray-text: #64748b;
+    --border-color: #e2e8f0;
+}
+
 
 
 body{
@@ -67,6 +76,73 @@ main {                                      /*Corpo principal*/
 
 
 
+/* Esconde todas as abas por padrão */
+.tab-content {
+    display: none; 
+}
+
+/* Mostra apenas a aba que tiver a classe .active */
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease; /* Opcional: efeito suave */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilo visual dos botões (opcional, para alinhar com a imagem) */
+.tab-btn.active {
+
+    max-width: 1500px;
+    min-width: 320px;
+    margin: auto;
+    
+    background-color: #2563eb;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Container das abas */
+.tabs-header {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    align-items: center;             /* Espaçamento entre os botões */
+    background-color: #f1f5f9; /* Cor de fundo suave (como na imagem original) */
+    padding: 10px;
+    border-radius: 50px;     /* Arredonda o fundo */
+    max-width: 1000px;        /* Limita a largura para não esticar demais */
+    min-width: 320px;
+    margin: auto;       /* Centraliza o container na página e dá margem topo/base */
+    flex-wrap: wrap;
+}
+
+/* Estilo Geral dos Botões */
+.tab-btn {
+    padding: 12px;      /* Aumenta o tamanho interno (clicável) */
+    font-size: 16px;         /* Aumenta a letra */
+    border: none;            /* Remove a borda padrão feia */
+    background: transparent; /* Fica invisível até ser selecionado */
+    color: #64748b;
+    cursor: pointer;
+    border-radius: 40px;     /* Deixa os botões arredondados */
+    transition: all 0.3s ease;
+    white-space: nowrap;     /* Impede que o texto quebre linha */
+}
+
+/* Botão Ativo (O que está selecionado) */
+.tab-btn.active {
+    background-color: #2563eb; /* Azul vibrante */
+    color: white;              /* Letra branca */
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); /* Sombra suave */
+}
+
+/* Efeito ao passar o mouse */
+.tab-btn:hover:not(.active) {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
 
 
 
@@ -97,13 +173,13 @@ main {                                      /*Corpo principal*/
 
 
 
-
-
-
-footer{                                 /*a parte do rodapé*/
+/* footer{                                 
     background-color: #101828;
     color: white;
     padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%; 
 }
 
 .footer{
@@ -143,4 +219,4 @@ footer{                                 /*a parte do rodapé*/
     padding-top: 20px;
     border-top: 1px solid #2a3a55;
     font-size: 13px;
-}
+} */

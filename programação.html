@@ -23,8 +23,26 @@
     </header>
 
     <main>
+        <div class="tabs-container">
+            <div class="tabs-header">
+            <button class="tab-btn active" onclick="openTab(event, 'dia1')">Dia 1 - 15/05</button>
+            <button class="tab-btn" onclick="openTab(event, 'dia2')">Dia 2 - 16/05</button>
+            <button class="tab-btn" onclick="openTab(event, 'dia3')">Dia 3 - 17/05</button>
+        </div>
 
+        <div id="dia1" class="tab-content active">
+            <div class="agenda-item active">08:00 - 09:30</div>
+            <div class="agenda-item">09:30 - 10</div>
+        </div>
 
+        <div id="dia2" class="tab-content">
+            <p>Programação do segundo dia...</p>
+        </div>
+
+        <div id="dia3" class="tab-content">
+            <p>Programação do terceiro dia...</p>
+        </div>
+</div>
 
 
 
@@ -32,7 +50,9 @@
 
 
     </main>
-    <footer>
+
+
+    <!-- <footer>
         <div class="footer">
 
             <div class="coluna">
@@ -55,10 +75,12 @@
             </div>
             <p>© 2026 TechEvent. Todos os direitos reservados.</p>
         </div>
-        </footer>
+        </footer> -->
 
 
 
     
+        <script src="script.js"></script>
 </body>
+
 </html>
