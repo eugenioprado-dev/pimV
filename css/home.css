@@ -280,7 +280,6 @@ footer{                                 /*a parte do rodapé*/
     max-width: 1200px;
     min-width: 40px;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -302,9 +301,9 @@ footer{                                 /*a parte do rodapé*/
 }
 
 .coluna a h3{
-    text-decoration: none;
     color: white;
 }
+
 
 .footer > p{
     width: 100%;
@@ -313,4 +312,8 @@ footer{                                 /*a parte do rodapé*/
     padding-top: 20px;
     border-top: 1px solid #2a3a55;
     font-size: 13px;
+}
+
+.coluna a{
+    text-decoration: none;
 }

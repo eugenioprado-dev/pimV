@@ -7,12 +7,12 @@
     box-sizing: border-box;
 }
 
-:root {
+/* :root {
     --blue-primary: #2563eb;
     --gray-bg: #f8fafc;
     --gray-text: #64748b;
     --border-color: #e2e8f0;
-}
+} */
 
 
 
@@ -75,76 +75,123 @@ main {                                      /*Corpo principal*/
 }
 
 
-
-/* Esconde todas as abas por padrão */
-.tab-content {
-    display: none; 
+.cronograma{
+    max-width:900px;
+    margin:auto;
 }
 
-/* Mostra apenas a aba que tiver a classe .active */
-.tab-content.active {
-    display: block;
-    animation: fadeIn 0.3s ease; /* Opcional: efeito suave */
+input{
+    display:none;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+/* abas */
+
+.abas{
+    display:flex;
+    background:#ddd;
+    border-radius:30px;
+    padding:5px;
+    margin-bottom:25px;
 }
 
-/* Estilo visual dos botões (opcional, para alinhar com a imagem) */
-.tab-btn.active {
-
-    max-width: 1500px;
-    min-width: 320px;
-    margin: auto;
-    
-    background-color: #2563eb;
-    color: white;
-    border-radius: 20px;
+.abas label{
+    flex:1;
+    text-align:center;
+    padding:10px;
+    cursor:pointer;
+    border-radius:20px;
 }
 
-/* Container das abas */
-.tabs-header {
-    display: flex;
-    justify-content: center; /* Centraliza os botões */
-    align-items: center;             /* Espaçamento entre os botões */
-    background-color: #f1f5f9; /* Cor de fundo suave (como na imagem original) */
-    padding: 10px;
-    border-radius: 50px;     /* Arredonda o fundo */
-    max-width: 1000px;        /* Limita a largura para não esticar demais */
-    min-width: 320px;
-    margin: auto;       /* Centraliza o container na página e dá margem topo/base */
-    flex-wrap: wrap;
+/* ativar aba */
+
+#dia1:checked ~ .abas label[for="dia1"],
+#dia2:checked ~ .abas label[for="dia2"],
+#dia3:checked ~ .abas label[for="dia3"]{
+    background:white;
+    font-weight:bold;
 }
 
-/* Estilo Geral dos Botões */
-.tab-btn {
-    padding: 12px;      /* Aumenta o tamanho interno (clicável) */
-    font-size: 16px;         /* Aumenta a letra */
-    border: none;            /* Remove a borda padrão feia */
-    background: transparent; /* Fica invisível até ser selecionado */
-    color: #64748b;
-    cursor: pointer;
-    border-radius: 40px;     /* Deixa os botões arredondados */
-    transition: all 0.3s ease;
-    white-space: nowrap;     /* Impede que o texto quebre linha */
+/* listas */
+
+.lista{
+    display:none;
 }
 
-/* Botão Ativo (O que está selecionado) */
-.tab-btn.active {
-    background-color: #2563eb; /* Azul vibrante */
-    color: white;              /* Letra branca */
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); /* Sombra suave */
+#dia1:checked ~ .eventos .dia1,
+#dia2:checked ~ .eventos .dia2,
+#dia3:checked ~ .eventos .dia3{
+    display:block;
 }
 
-/* Efeito ao passar o mouse */
-.tab-btn:hover:not(.active) {
-    background-color: #e2e8f0;
-    color: #1e293b;
+/* cards */
+
+.card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    border-radius:12px;
+    padding: 20px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    line-height: 2;
 }
 
+.card.destaque{
+    border:2px solid #2d6cdf;
+    background:#eef3ff;
+}
 
+.card span{
+    font-size: 15px;
+}
+
+.hora{
+    width:130px;
+    font-weight:bold;
+}
+
+.hora::before{
+    content: "🕒";
+    margin-right:8px;
+}
+
+.info{
+    flex:1;
+}
+
+.local{
+    width:180px;
+    text-align:right;
+    color:#555;
+}
+
+.local::before{
+    content:"📍";
+}
+
+.tag{
+    background:#e5e5e5;
+    padding:4px 10px;
+    border-radius:8px;
+    font-size: 12px;
+}
+
+.tag.azul{
+    background:#2d6cdf;
+    color:white;
+    font-size: 12px;
+}
+
+.tag.roxa{
+    background:#9d26d4;
+    color:white;
+    font-size: 12px;
+}
+
+.card p{
+    font-size: 12px;
+}
 
 
 
