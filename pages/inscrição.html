@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscrição</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/inscrição.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/inscrição.css">
 </head>
 <body>
     <header>
@@ -13,11 +13,11 @@
         <h2 class="ano">2026</h2>
         <nav>
             <ul>
-                <li><a href="home.html">Início</a></li>
-                <li><a href="programação.html">Programação</a></li>
-                <li><a href="inscrição.html">Inscrição</a></li>
-                <li><a href="participante.html">Participante</a></li>
-                <li><a href="certificados.html">Certificados</a></li>
+                <li><a href="../pages/home.html">Início</a></li>
+                <li><a href="../pages/programação.html">Programação</a></li>
+                <li><a href="../pages/inscrição.html">Inscrição</a></li>
+                <li><a href="../pages/participante.html">Participante</a></li>
+                <li><a href="../pages/certificados.html">Certificados</a></li>
             </ul>
         </nav>
     </header><br>
@@ -29,16 +29,16 @@
             <h1>Faça sua Inscrição</h1>
             <p>Preencha o formulário abaixo para garantir sua vaga no TechEvent 2026</p>
 
-            <form class="formulario">
+            <form id="formInscricao" class="formulario">
             
                 <div class="campo">
                     <label>Nome Completo</label>
-                    <input id="nome" type="text" placeholder="Digite seu nome completo" required>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
                 </div>
 
                 <div class="campo">
                     <label>E-mail</label>
-                    <input id="email"  type="email" placeholder="seu@email.com" required>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
                 </div>
 
                 <div class="campo">
@@ -48,8 +48,8 @@
 
                 <div class="campo">
                     <label>Digite seu CPF</label>
-                    <input id="cpf"
-                    type="text"
+                    <input 
+                    type="text" id="cpf"
                     placeholder="000.000.000-00"
                     maxlength="14"
                     required>
@@ -78,7 +78,9 @@
                 <button type="submit">Enviar inscrição</button>
 
                 </form>
-
+                <div id="mensagemBox" class="mensagem-box">
+                    <p id="mensagem"></p>
+                </div>
             </section>
     </main>
     <footer>
@@ -104,7 +106,8 @@
             </div>
             <p>© 2026 TechEvent. Todos os direitos reservados.</p>
         </div>
-        </footer>
+    </footer>
     
+        <script src="../js/inscricao.js"></script>
 </body>
 </html>
