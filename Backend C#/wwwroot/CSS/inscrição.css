@@ -1,0 +1,245 @@
+@charset 'UTF-8';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header{                                 /*cabeçario*/
+    background-image: url(https://amanha.com.br/images/p/9954/Zero-e-uns-linguagem-de-computador-formando-um-rosto-para-ilustrar-inteligncia-artificial.jpeg);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+header h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header h2.ano{
+    font-size: 1.5em;
+    color: #000000b7;
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav ul{                                    /*Menu*/
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-inline-end: 15px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background-color: #ccc;
+    color: #022133;
+}
+
+main {                                      /*Corpo principal*/
+    max-width: 1500px;
+    min-width: 320px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.inscricao{
+    background:white;
+    padding:35px;
+    width:450px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+    min-height: 50vh;
+}
+
+.inscricao h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.inscricao p{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:14px;
+    color:#555;
+}
+
+.formulario{
+    display:flex;
+    flex-direction:column;
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:15px;
+}
+
+.campo label{
+    margin-bottom:5px;
+    font-size:14px;
+}
+
+.campo input,
+.campo select{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0077ff;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+footer{                                 /*a parte do rodapé*/
+    background-color: #101828;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+}
+
+.footer{
+    max-width: 1200px;
+    min-width: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.coluna{
+    max-width: 300px;
+}
+
+.coluna h3{
+    margin-bottom: 15px;
+}
+
+.coluna p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.coluna a h3{
+    color: white;
+}
+
+
+.footer > p{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #2a3a55;
+    font-size: 13px;
+}
+
+.coluna a{
+    text-decoration: none;
+}
+
+/* fundo escurecido */
+
+.overlay{   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* quando estiver ativo */
+
+.overlay.ativo{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* caixa da mensagem */
+
+.mensagem-box{
+    background: white;
+    color: #333;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+/* animação */
+
+.overlay.ativo .mensagem-box{
+    transform: scale(1);
+}
+
+/* texto */
+
+.mensagem-box p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* botão */
+
+.mensagem-box button{
+    background: #1f3c88;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.mensagem-box button:hover{
+    background: #162a63;
+}
