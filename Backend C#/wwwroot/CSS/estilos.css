@@ -1,0 +1,253 @@
+@charset 'UTF-8';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header{                                 /*cabeçario*/
+    background-image: url(https://amanha.com.br/images/p/9954/Zero-e-uns-linguagem-de-computador-formando-um-rosto-para-ilustrar-inteligncia-artificial.jpeg);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+header h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header h2.ano{
+    font-size: 1.5em;
+    color: #000000b7;
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav ul{                                    /*Menu*/
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-inline-end: 15px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background-color: #ccc;
+    color: #022133;
+}
+
+main {                                      /*Corpo principal*/
+    max-width: 1500px;
+    min-width: 320px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.cronograma{                        /*Corpo do programa*/
+    max-width: 1000px;
+    margin:auto;
+}
+
+input{                             /*Deixar a aba escondida*/
+    display: none;
+}
+
+/* abas */
+
+.abas{                              
+    display:flex;
+    background:#ddd;
+    border-radius:30px;
+    padding:5px;
+    margin-bottom:25px;
+}
+
+.abas label{
+    flex:1;
+    text-align:center;
+    padding:10px;
+    cursor:pointer;
+    border-radius:20px;
+}
+
+/* ativar aba */
+
+#dia1:checked ~ .abas label[for="dia1"],
+#dia2:checked ~ .abas label[for="dia2"],
+#dia3:checked ~ .abas label[for="dia3"]{
+    background:white;
+    font-weight:bold;
+}
+
+/* listas */
+
+.lista{
+    display:none;
+}
+
+#dia1:checked ~ .eventos .dia1,
+#dia2:checked ~ .eventos .dia2,
+#dia3:checked ~ .eventos .dia3{
+    display:block;
+}
+
+/* cards Principal*/
+
+.card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    border-radius:12px;
+    padding: 20px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    line-height: 2;
+}
+
+.card.destaque{
+    border:2px solid #2d6cdf;
+    background:#eef3ff;
+}
+
+.card span{
+    font-size: 15px;
+}
+
+.hora{
+    width:130px;
+    font-weight:bold;
+}
+
+.hora::before{
+    content: "🕒";
+    margin-right:8px;
+}
+
+.info{
+    flex:1;
+}
+
+.local{
+    width:180px;
+    text-align: center;
+    color:#555;
+}
+
+.local::before{
+    content:"📍";
+}
+
+.tag{
+    background:#e5e5e5;
+    padding:4px 10px;
+    border-radius:8px;
+    font-size: 12px;
+}
+
+.tag.azul{
+    background:#2d6cdf;
+    color:white;
+    font-size: 12px;
+}
+
+.tag.roxa{
+    background:#9d26d4;
+    color:white;
+    font-size: 12px;
+}
+
+.tag.verde{
+    background:#0e9409cb;
+    color:white;
+    font-size: 12px;
+}
+
+.tag.laranja{
+    background:#c57409de;
+    color:white;
+    font-size: 12px;
+}
+
+.card p{
+    font-size: 12px;
+}
+
+.card h3{
+    font-size: 1em;
+}
+
+footer{                                 
+    background-color: #101828;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+}
+
+.footer{
+    max-width: 1200px;
+    min-width: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.coluna{
+    max-width: 300px;
+}
+
+.coluna h3{
+    margin-bottom: 15px;
+}
+
+.coluna p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.coluna a h3{
+    color: white;
+}
+
+.footer > p{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #2a3a55;
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+}       
+
+                /*Fim da pagina de Programação*/
