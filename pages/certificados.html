@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificados</title>
-    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Certificados</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
+
+  <!-- MENU (opcional) -->
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="certificados.html">Certificados</a>
+  </nav>
+
+  <!-- SEÇÃO CERTIFICADOS -->
+  <section class="certificados-page">
+    <h2>Consultar Certificados</h2>
+
+    <div class="busca-certificado">
+      <input 
+        type="text" 
+        id="cpf" 
+        placeholder="Digite seu CPF (000.000.000-00)" 
+        maxlength="14"
+      >
+      <button onclick="buscarCertificados()">Buscar</button>
+    </div>
+
+    <div id="resultado"></div>
+  </section>
+
+  <!-- SCRIPT -->
+  <script src="../js/certificados.js"></script>
+
 </body>
 </html>

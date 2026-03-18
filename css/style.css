@@ -1,0 +1,44 @@
+.certificados-page {
+  padding: 40px;
+  text-align: center;
+}
+
+.busca-certificado {
+  margin: 20px 0;
+}
+
+.busca-certificado input {
+  padding: 10px;
+  width: 260px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.busca-certificado button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-certificado {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.card-certificado a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background: #28a745;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
