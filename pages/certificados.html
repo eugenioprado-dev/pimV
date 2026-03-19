@@ -2,37 +2,91 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificados</title>
-  <link rel="stylesheet" href="../css/style.css">
-</head>
 
+  <link rel="stylesheet" href="../css/certificados.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
 <body>
 
-  <!-- MENU (opcional) -->
-  <nav>
-    <a href="home.html">Home</a>
-    <a href="certificados.html">Certificados</a>
+  //* menu de navegação
+  <nav class="navbar">
+    <div class="logo">TechEvent <span>2026</span></div>
+
+    <div class="nav-links">
+      <a href="home.html">Início</a>
+      <a href="certificados.html" class="active">Certificados</a>
+    </div>
   </nav>
 
-  <!-- SEÇÃO CERTIFICADOS -->
-  <section class="certificados-page">
-    <h2>Consultar Certificados</h2>
+  <main class="certificados-page">
+    <section class="certificados-header">
+      <div class="icon-circle">🏅</div>
+      <h1>Certificados</h1>
+      <p>Busque e baixe seus certificados de participação</p>
+    </section>
 
-    <div class="busca-certificado">
-      <input 
-        type="text" 
-        id="cpf" 
-        placeholder="Digite seu CPF (000.000.000-00)" 
-        maxlength="14"
-      >
-      <button onclick="buscarCertificados()">Buscar</button>
-    </div>
+    // formulário de busca de certificados
+    <section class="certificados-box">
+      <div class="tabs">
+        <button class="tab active" type="button">Buscar por CPF</button>
+      </div>
 
-    <div id="resultado"></div>
-  </section>
+      <div class="certificados-form">
+        <label for="cpf">CPF</label>
+        <input
+          type="text"
+          id="cpf"
+          placeholder="Digite seu CPF (000.000.000-00)"
+          maxlength="14"
+        >
+        <small>Digite o CPF usado na inscrição do evento</small>
 
-  <!-- SCRIPT -->
+        <button class="btn-buscar" id="btnBuscarCertificado" type="button">
+          Buscar Certificado
+        </button>
+      </div>
+    </section>
+
+     // área de resultados da busca (preenchido com js)
+    <section id="resultado" class="resultado-box"></section>
+
+    // informações adicionais
+    <section class="info-cards">
+      <div class="info-card destaque">
+        <h3>Como obter meu certificado?</h3>
+        <ul>
+          <li>Participe das atividades do evento</li>
+          <li>Realize presença ou check-in quando necessário</li>
+          <li>Aguarde a liberação do certificado</li>
+          <li>Busque o documento usando seu CPF</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Certificado Digital</h3>
+        <ul>
+          <li>Disponível em formato digital</li>
+          <li>Fácil de acessar e baixar</li>
+          <li>Organizado por participante</li>
+          <li>Consulta rápida pela plataforma</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ajuda-box">
+      <h3>Precisa de ajuda?</h3>
+      <p>
+        Se você estiver com dificuldades para encontrar seu certificado,
+        entre em contato com o suporte do evento.
+      </p>
+    </section>
+  </main>
+
   <script src="../js/certificados.js"></script>
-
 </body>
 </html>
