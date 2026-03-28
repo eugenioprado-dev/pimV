@@ -13,7 +13,20 @@ body{
     color: #333333;
 }
 
-header{                                 /*cabeçario*/
+/* Ajuste para o VLibras não tampar o menu 'flex-end' */
+.vw-access-button {
+    top: 50% !important;    /* Move o botão para o meio da altura da tela */
+    right: 10px !important;  /* Mantém uma pequena distância da borda */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+/* Garante que o menu do cabeçalho fique sempre visível */
+header {
+    position: relative;
+    z-index: 10;
+}
+
+header{                                 /*cabeçalho*/
     background-image: url(https://amanha.com.br/images/p/9954/Zero-e-uns-linguagem-de-computador-formando-um-rosto-para-ilustrar-inteligncia-artificial.jpeg);
     color: #fff;
     padding: 20px 0;
