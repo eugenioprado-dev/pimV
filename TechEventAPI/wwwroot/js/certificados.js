@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <p style="font-size: 0.8rem; color: #6b7280;">Coordenador Geral - TechEvent 2026</p>
                             </div>
                         <div class="assinatura-item" style="text-align: center; width: 250px;">
-                            <p class="assinatura-manuscrita" style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #4b5563; margin-bottom: -5px;">Dra. Ana Costa</p>
+                            <p class="assinatura-manuscrita" style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #4b5563; margin-bottom: -5px;">Leo Aires</p>
                             <div style="height: 1px; background-color: #d1d5db; margin-bottom: 8px;"></div>
-                            <p style="font-size: 0.9rem; color: #111827; font-weight: 600;">Dra. Ana Costa</p>
-                            <p style="font-size: 0.8rem; color: #6b7280;">Coordenadora Acadêmica</p>
+                            <p style="font-size: 0.9rem; color: #111827; font-weight: 600;">Leo Aires</p>
+                            <p style="font-size: 0.8rem; color: #6b7280;">Coordenador Acadêmica</p>
                         </div>
                     </div>
 
