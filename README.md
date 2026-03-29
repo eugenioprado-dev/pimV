@@ -35,3 +35,5 @@ Para utilizar o programa, seguir os seguintes passos:
 -Segundo comando  ( dotnet run )
 
 -Preferência abrir no Live Server!
+
+-Caminho exato para entrar no site: TechEventAPI  ->  wwwroot  ->  páginas  ->  página inicial.html

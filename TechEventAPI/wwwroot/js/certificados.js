@@ -31,7 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div style="background: white; padding: 30px; border-radius: 12px; border-left: 10px solid #2563eb; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-top: 20px; text-align: left;">
                         <h2 style="color: #1e40af; margin-bottom: 10px;">🏆 Certificado Disponível</h2>
                         <p style="font-size: 1.1rem; color: #374151;">Certificamos que <strong>${usuario.nome}</strong> participou com êxito do <strong>TechEvent 2026</strong>.</p>
-                        <p style="color: #6b7280; margin-top: 10px;">Carga Horária: 40 Horas</p>
+                        <p style="color: #6b7280; margin-top: 10px;">Carga Horária: 40 Horas</p><br><br>
+                        <p><strong>Conteúdo:</strong></p>
+                        <ul style="color: #6b7280; margin-left: 20px;">
+                            <li>Blockchain e Web3</li>
+                            <li>Desenvolvimento Web</li>
+                            <li>Desenvolvimento React Avançado</li>
+                            <li>Desenvolvimento de Software Moderno</li>
+                            <li>UX | UI Design e Acessibilidade</li>
+                            <li>Programação</li>
+                            <li>Cloud Computing e DevOps</li>
+                            <li>Inteligência Artificial</li>
+                            <li>Segurança da Informação</li>
+                            <li>Segurança Cibernética</li>
+                        </ul>
                         <button onclick="window.print()" style="margin-top: 20px; padding: 12px 24px; background: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
                             📥 Baixar Certificado (PDF)
                         </button>
