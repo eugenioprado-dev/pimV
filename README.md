@@ -24,3 +24,14 @@ Este projeto foi desenvolvido utilizando tecnologias fundamentais do desenvolvim
 
 -HTML5 → Estrutura das páginas
 -CSS3 → Estilização e layout responsivo
+
+-Libras: Acessibilidade em cada etapa para melhor entendimento com um card "Azul" para libras 
+
+
+
+Para utilizar o programa, seguir os seguintes passos:
+
+-No terminal por o primeiro comando ( cd TechEventAPI )
+-Segundo comando  ( dotnet run )
+
+-Preferência abrir no Live Server!
