@@ -432,3 +432,67 @@ footer{                                 /* rodapé */
     grid-template-columns: 1fr;
   }
 }
+
+
+/*Certificados*/
+
+@media print {
+    /* 1. Configuração da Página e Margens Externas */
+    @page {
+        size: auto;
+        margin: 0; /* Remove margens do browser (data, URL) */
+    }
+
+    /* 2. Força o corpo a ocupar a folha inteira e centralizar */
+    html, body {
+        height: 100vh; /* Garante que o body ocupa a folha toda */
+        width: 100vw;
+        overflow: hidden; /* Evita páginas em branco extras */
+        margin: 0;
+        padding: 0;
+        
+        /* MAGIA DA CENTRALIZAÇÃO VERTICAL E HORIZONTAL */
+        display: flex !important;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;     /* Centraliza verticalmente (O QUE VOCÊ QUERIA!) */
+        
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* 3. Esconde o site (Menu, Footer, Botões de busca) */
+    body * {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 4. Mostra APENAS a div com id "area-print" */
+    #area-print, #area-print * {
+        visibility: visible;
+        margin: 0; /* Reinicia margens para não deslocar */
+    }
+
+    /* 5. Estilos de Posicionamento para o Card */
+    #area-print {
+        /* Remove o posicionamento antigo que causava o erro */
+        position: relative; /* Não precisa mais ser absolute */
+        width: 90%;          /* Dá uma margem interna de segurança */
+        max-width: 900px;    /* Largura máxima para não ficar muito esticado */
+        box-shadow: none !important;
+        border: 1px solid #eee !important;
+        
+        /* Mantém o padding e estilos que já estão no seu innerHTML */
+        page-break-inside: avoid;
+        margin: 0 auto;
+    }
+
+    /* 6. Esconde botões e VLibras no PDF final */
+    #area-print button, 
+    .btn-print-action, 
+    .vw-plugin-wrapper, 
+    [vw], 
+    header, footer, nav {
+        display: none !important;
+    }
+}
