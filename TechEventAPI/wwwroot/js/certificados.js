@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <div class="certificado-body" style="margin-bottom: 40px;">
-                            <p style="font-size: 1.1rem; color: #374151; line-height: 1.6;">Certificamos que <strong>${usuario.nome}</strong> participou com êxito do <strong>TechEvent 2026</strong>, o maior evento de tecnologia e inovação, com carga horária total de <span class="carga-horaria" style="font-weight: 700; color: #1e40af; background: #eff6ff; padding: 2px 6px; border-radius: 4px;">40 Horas</span>.</p>
+                            <p style="font-size: 1.1rem; color: #374151; line-height: 1.6; ">Certificamos que <strong>${usuario.nome}</strong> participou com êxito do <strong>TechEvent 2026</strong>, o maior evento de tecnologia e inovação, com carga horária total de <span class="carga-horaria" style="font-weight: 700; color: #1e40af; background: #eff6ff; padding: 2px 6px; border-radius: 4px;">40 Horas</span>.</p>
                         </div>
 
                         <div class="certificado-conteudo" style="margin-bottom: 50px;">
@@ -65,9 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <p style="font-size: 0.8rem; color: #6b7280;">Coordenador Geral - TechEvent 2026</p>
                             </div>
                         <div class="assinatura-item" style="text-align: center; width: 250px;">
-                            <p class="assinatura-manuscrita" style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #4b5563; margin-bottom: -5px;">Leo Aires</p>
+                            <p class="assinatura-manuscrita" style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #4b5563; margin-bottom: -5px;">Leonardo Aires</p>
                             <div style="height: 1px; background-color: #d1d5db; margin-bottom: 8px;"></div>
-                            <p style="font-size: 0.9rem; color: #111827; font-weight: 600;">Leo Aires</p>
+                            <p style="font-size: 0.9rem; color: #111827; font-weight: 600;">Leonardo Aires</p>
                             <p style="font-size: 0.8rem; color: #6b7280;">Coordenador Acadêmica</p>
                         </div>
                     </div>

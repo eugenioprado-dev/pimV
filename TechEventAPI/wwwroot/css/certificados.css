@@ -496,3 +496,14 @@ footer{                                 /* rodapé */
         display: none !important;
     }
 }
+
+@media print {
+    #area-print {
+        /* Força a renderização de cores e fundos no PDF */
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        
+        /* Reforça a borda especificamente para a impressão */
+        border-left: 5px solid #1d4ed8 !important;
+    }
+}
