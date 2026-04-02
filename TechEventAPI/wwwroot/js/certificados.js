@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const btnBuscar = document.getElementById('btnBuscarCertificado');
-    const resultadoArea = document.getElementById('resultado'); // ID exato do seu HTML
+    const resultadoArea = document.getElementById('resultado'); // ID 
     const campoCpf = document.getElementById('cpf');
 
     async function buscarCertificado() {

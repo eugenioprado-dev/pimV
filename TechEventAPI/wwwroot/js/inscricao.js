@@ -12,7 +12,7 @@ async function enviarInscricao() {
         return;
     }
 
-    // 2. Montagem do objeto (PascalCase para o C#)
+    // 2. Montagem do objeto 
     const dadosParticipante = {
         Nome: campoNome.value.trim(),
         CPF: campoCpf.value.trim(),

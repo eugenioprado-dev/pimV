@@ -21,7 +21,7 @@ namespace TechEventAPI.Controllers
             return Ok(new { mensagem = "Inscrição salva com sucesso!", nome = participante.Nome });
         }
 
-        // NOVA ROTA: Para a página de Participantes e Certificados lerem os dados
+        // ROTA: Para a página de Participantes e Certificados lerem os dados
         [HttpGet("Listar")]
         public IActionResult Listar()
         {

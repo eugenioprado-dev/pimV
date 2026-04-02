@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // AJUSTE: Usando o ID exato que aparece no seu HTML (image_b8c435.png)
+    // AJUSTE: Usando o ID 
     const corpoTabela = document.getElementById('listaParticipantes');
     
     if (!corpoTabela) {
