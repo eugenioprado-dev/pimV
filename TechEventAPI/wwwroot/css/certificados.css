@@ -507,3 +507,32 @@ footer{                                 /* rodapé */
         border-left: 5px solid #1d4ed8 !important;
     }
 }
+
+@media print {
+    /* 1. Ajuste de Orientação e Tamanho (Crucial para Mobile) */
+    @page {
+        size: A4 landscape; /* Força o PDF a ser horizontal, ideal para certificados */
+        margin: 0;
+    }
+
+    /* 2. Correção de Unidades para Mobile */
+    html, body {
+        height: 100%; /* Use % em vez de vh para maior compatibilidade mobile */
+        width: 100%;
+        position: fixed; /* Previne que o browser tente 'rolar' e criar a 2ª aba */
+        left: 0;
+        top: 0;
+    }
+
+    /* 3. Ajuste de Escala do Card */
+    #area-print {
+        width: 95vw !important; /* No celular, usamos a largura da viewport de impressão */
+        max-width: none;        /* Remove restrições de PC */
+        transform: scale(0.95); /* Uma pequena redução de segurança para não tocar nas bordas */
+        transform-origin: center;
+        
+        /* Garante que o fundo branco e cores apareçam (importante para o certificado) */
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}

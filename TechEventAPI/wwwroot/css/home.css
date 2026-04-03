@@ -330,3 +330,14 @@ footer{                                 /* rodapé */
 .coluna a{
     text-decoration: none;
 }
+
+@media (max-width: 480px) {
+    .sobre h2 {
+        font-size: 1.6em;      /* Diminui levemente o tamanho da fonte */
+        padding: 30px 10px;    /* Reduz o padding lateral para o texto ter mais espaço */
+        white-space: nowrap;   /* Evita que o texto quebre em várias linhas */;
+        text-align: center;    /* Garante que fique centralizado */
+        display: block;        /* Muda de flex para block para simplificar o alinhamento */
+        white-space: nowrap;   /* Força o texto a ficar em uma única linha, se couber */
+    }
+}
