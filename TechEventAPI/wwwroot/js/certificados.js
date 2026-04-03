@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // 2. Chamada para a API (Porta 5277 do dotnet run)
-            const resposta = await fetch('http://localhost:5277/api/certificados/listar');
+            const resposta = await fetch('/api/certificados/listar');
 
             if (!resposta.ok) throw new Error("Servidor fora do ar");
 

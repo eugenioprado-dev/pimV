@@ -20,4 +20,8 @@ app.UseStaticFiles();
 
 app.MapControllers();
 
-app.Run();
+// Obtém a porta da variável de ambiente do Render, ou usa 5000 como fallback local
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+
+// Configura a API para ouvir em todas as interfaces de rede (0.0.0.0) na porta correta
+app.Run($"http://0.0.0.0:{port}");

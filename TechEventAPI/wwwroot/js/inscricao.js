@@ -21,7 +21,7 @@ async function enviarInscricao() {
 
     try {
         // 3. Chamada para a API
-        const resposta = await fetch('http://localhost:5277/api/certificados/gerar', {
+        const resposta = await fetch('/api/certificados/gerar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
