@@ -66,73 +66,63 @@ main {                                      /*Corpo principal*/
     background-color: #fff;
 }
 
-.inscricao {
-    background: white;
-    padding: 30px;
-    width: 100%;       /* Ocupa tudo em telas pequenas */
-    max-width: 500px;  /* No PC, não passa de 500px */
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    margin: 20px auto; /* Centraliza horizontalmente */
+.inscricao{
+    background:white;
+    padding:35px;
+    width:450px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+    min-height: 50vh;
 }
 
-.inscricao h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-    color: #101828;
+.inscricao h1{
+    text-align:center;
+    margin-bottom:10px;
 }
 
-.inscricao p {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 0.95rem;
-    color: #666;
+.inscricao p{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:14px;
+    color:#555;
 }
 
-/* --- FORMULÁRIO --- */
-.formulario {
-    display: flex;
-    flex-direction: column;
+.formulario{
+    display:flex;
+    flex-direction:column;
 }
 
-.campo {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+.campo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:15px;
 }
 
-.campo label {
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #444;
+.campo label{
+    margin-bottom:5px;
+    font-size:14px;
 }
 
 .campo input,
-.campo select {
-    padding: 14px; /* Mais espaço para o dedo tocar no celular */
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    width: 100%;
+.campo select{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
 }
 
-button {
-    margin-top: 10px;
-    padding: 15px;
-    border: none;
-    border-radius: 8px;
-    background: #0077ff;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #0056b3;
+button{
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0077ff;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 footer{                                 /*a parte do rodapé*/
@@ -252,4 +242,25 @@ footer{                                 /*a parte do rodapé*/
 
 .mensagem-box button:hover{
     background: #162a63;
+}
+
+@media (max-width: 480px) {
+    .inscricao {
+        width: 95%;          /* Ocupa quase toda a largura da tela do celular */
+        padding: 20px;       /* Reduz um pouco o espaçamento interno para ganhar espaço */
+        margin: 20px auto;   /* Garante que fique centralizado com margem nas laterais */
+    }
+
+    .inscricao h1 {
+        font-size: 1.5rem;   /* Diminui um pouco o título para não quebrar feio */
+    }
+
+    header h2 {
+        font-size: 1.8rem;   /* Ajusta o tamanho do logo no topo */
+    }
+
+    nav ul {
+        justify-content: center; /* Centraliza os links do menu no celular */
+        padding-inline-end: 0;   /* Remove o recuo que você tinha na direita */
+    }
 }
